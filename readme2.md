@@ -1,8 +1,10 @@
 En este archivo de pondre solo los comandos utilizados, la capturas las enviare por esemtia.
 Facendo uso de VScode, Docker e a imaxe de ubuntu da práctica anterior, describe no arquivo readme.md, cun formato claro, os pasos e comandos para:
 1. Descargar e comprobar que unha imaxe está no teu equipo
+
 (docker pull ubuntu)
 (docker images)
+
 2. Crear un contenedor sen nome, queda arrincado?, cómo obtés o nome?
 
 (docker run -d ubuntu)
