@@ -34,13 +34,19 @@ Los contenedores seguirán en ejecución si fueron iniciados con -d (en segundo 
 (docker stats)
 
 9. Cómo fixeches para clonar o repositorio
+
 Para clonar o repositorio use o comando git clone https://github.com/O luis/Tarea-1.git na terminal
+
 10. Cómo engades o arquivo readme2.md
+
 Para añadir el archivo use git add readme2.md
+
 11. Os pasos a seguir para subir o arquivo que estás editando e o arquivo readme2.md
-Verifique el estado del repositorio con git status, añadi los archivos con el comando git add readme2.md, use el comando git commit -m "Hola gente"(Un commit es como un "snapshot), y por ultimo para subir el archivo use git push origin (nombre de la rama que estoy usando), 
+
+Verifique el estado del repositorio con git status, añadi los archivos con el comando git add readme2.md, use el comando git commit -m "Hola gente"(Un commit es como un "snapshot), y por ultimo para subir el archivo use git push  (nombre de la rama que estoy usando), 
 
 12. Cómo comprobarías que existen diferencias entre o teu repositorio local e o remote.
+
 Primero, necesitas obtener la información más reciente del repositorio remoto con el comando git fetch origin, Después de hacer el fetch, puedes usar el siguiente comando para ver las diferencias entre tu rama local (por ejemplo, main) y la rama remota git diff origin/main, 
 
 
