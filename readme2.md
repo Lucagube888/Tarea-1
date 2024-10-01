@@ -4,21 +4,33 @@ Facendo uso de VScode, Docker e a imaxe de ubuntu da práctica anterior, describ
 (docker pull ubuntu)
 (docker images)
 2. Crear un contenedor sen nome, queda arrincado?, cómo obtés o nome?
+
 (docker run -d ubuntu)
 (docker ps -a)
+
 3. Crea un contenedor coo nome 'u1', cómo accedes a el?
+
 (docker run -dit --name u1 ubuntu)
 (docker exec -it u1 bash)
+
 4. Comproba a súa ip e fai ping a google.com
+
 (docker inspect u1 | grep "IPAddress")
+
 5. Crea un contenedor coo nome 'bono', pódes facer ping entre os contenedores?
+
 (docker run -dit --name bono ubuntu)
+
 6. Se pechas as terminales, qué pasa coo contenedor?
 Los contenedores seguirán en ejecución si fueron iniciados con -d (en segundo plano).
 7. Cánta memoria no disco duro ocupaches? usa docker para calculalo
+
 (docker system df)
+
 8. Cánta RAM ocupan os contenedores? Crea varios para calculalo
+
 (docker stats)
+
 9. Cómo fixeches para clonar o repositorio
 Para clonar o repositorio use o comando git clone https://github.com/O luis/Tarea-1.git na terminal
 10. Cómo engades o arquivo readme2.md
