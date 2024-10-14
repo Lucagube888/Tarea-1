@@ -2,26 +2,26 @@
 Facendo uso de VScode, Docker e a imaxe de ubuntu da práctica anterior, describe no arquivo readme.md, cun formato claro, os pasos e comandos para:</h1>
 <h2>1. Descargar e comprobar que unha imaxe está no teu equipo</h2>
 
-(docker pull ubuntu)
-(docker images)
+    docker pull ubuntu
+    docker images
 
 <h2>2. Crear un contenedor sen nome, queda arrincado?, cómo obtés o nome?</h2>
 
-(docker run -d ubuntu)
-(docker ps -a)
+    docker run -d ubuntu
+    docker ps -a
 
 <h2>3. Crea un contenedor coo nome 'u1', cómo accedes a el?</h2>
 
-(docker run -dit --name u1 ubuntu)
-(docker exec -it u1 bash)
+    docker run -dit --name u1 ubuntu
+    docker exec -it u1 bash
 
 <h2>4. Comproba a súa ip e fai ping a google.com</h2>
 
-(docker inspect u1 | grep "IPAddress")
+    docker inspect u1 | grep "IPAddress"
 
 <h2>5. Crea un contenedor coo nome 'bono', pódes facer ping entre os contenedores?</h2>
 
-(docker run -dit --name bono ubuntu)
+    docker run -dit --name bono ubuntu
 
 <h2>6. Se pechas as terminales, qué pasa coo contenedor?</h2>
 
@@ -29,11 +29,11 @@ Los contenedores seguirán en ejecución si fueron iniciados con -d (en segundo 
 
 <h2>7. Cánta memoria no disco duro ocupaches? usa docker para calculalo</h2>
 
-(docker system df)
+    docker system df
 
 <h2>8. Cánta RAM ocupan os contenedores? Crea varios para calculalo</h2>
 
-(docker stats)
+    docker stats
 
 <h2>9. Cómo fixeches para clonar o repositorio</h2>
 
@@ -55,6 +55,6 @@ Primero, necesitas obtener la información más reciente del repositorio remoto 
 Entrega a tarefa enviando na resposta a dirección do teu repositorio coas respostas.
 
 En lo personal no me dejo usar el comando ping en los contenedores (debido a que porque la herramienta ping no está instalada en la imagen de Ubuntu que estaba usando), asique busque en chat gpt, e instale “el comando”. Lo hize usadno los comandos:
-apt-get update
-apt-get install -y iputils-ping
+    apt-get update
+    apt-get install -y iputils-ping
 
